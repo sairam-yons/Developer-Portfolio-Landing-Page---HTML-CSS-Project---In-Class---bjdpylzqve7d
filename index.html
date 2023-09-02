@@ -1,110 +1,144 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Developer Portfolio</title>
     <style>
-        body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-        }
-        .logo{
-            height: 700px;
-            width: 1500px;
-        }
-        .Hero{
-            background-color: green;
-            justify-content: center;
-            text-align: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .black-box{
-            text-align: center;
-            color: rgb(33, 32, 32);
-            background-color: aqua;
-            padding: 40px;
-            box-sizing: border-box;
-        }
-        .card-container{
-            display: flex;
-            justify-content: center;
-            padding: 20px 40px;
-            border: 4px;
-            box-sizing: border-box;
-        }
-        .card-container-text{
-            margin: 4rem    ;
-        }
-        .Bottom{
-            text-align: center;
-            justify-content: center;
-            background-color: grey;
-        }
-        .web{
-            text-align: center;
-            background-color: rgb(184, 181, 115);
-            border-radius: 70px;
-            padding-left: 1px;
-        }
-        .App{
-            text-align: center;
-            background-color: rgb(184, 181, 115);
-            border-radius: 10px;
-            padding: 40px 40px;
-        }
-        .Dev{
-            text-align: center;
-            background-color: rgb(184, 181, 115);
-            border-radius: 5px;
-            padding-right: 4px;
-            border-color: blueviolet;
-            border-style: ridge;
-            border: 10px solid blueviolet;
 
-        }
-        
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.black-box {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.bottom {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.logo{
+    object-fit: cover;
+    width: 250px;
+}
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+.nav-links a{
+    text-decoration: #333;
+    border-radius: 160px;
+    font-size: 20px;
+    font-style: inherit;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    background-color: #ff6b6b;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: blue;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+.header{
+    position: fixed;
+}
+
+.content{
+    margin-top: 100px;
+}
+
     </style>
 </head>
 <body>
-    <img src="C:\Users\saira\Desktop\HTML\Ai.jpg" class="logo" alt=".jpg"></img>
-    <div class="Hero">
-        <h1>Hi,</h1><h4>iam Sairam</h4>
-        <h2>Im a Full stack Developer</h2>
-    </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Carrers</a></li>
+                <li><a href="#">media</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1> Sairam</h1>
+            <p>Web Developer</p>
+        </div>
+    </section>
+
     <section class="black-box">
-        <h1>About me</h1>
-        <p>I'm a passionate web developer with a strong foundation...</p>
+        <div class="black-box-content">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with a strong foundation...</p>
+        </div>
     </section>
+
     <section class="card-container">
-        <ul class="Dev">
-            <h4>Web Development</h4>
-            <P>They use numerous programming languages to <br>create the back-end logic that powers the front end.
-                <br> In many cases, Web Developers are also responsible<br> for creating the front end user interface, though in
-                <br> some cases, this by a separate team of designers.</P>
-        </ul>
-        <ul class="App">
-            <h4>Application Development</h4>
-            <li>App Development Showcase</li>
-            <li>Mobile App Portfolio</li>
-            <li>Creating Innovative Apps</li>
-            <li>Crafting Functional Mobile Apps</li>
-        </ul>
-        <ul class="web">
-                <h4>Website</h4>
-            <p>build an e-commerce website like Amazon, Flipkart, Snapdeal, etc. <br>
-                Building an e-commerce website You can use Sveltestarp and Svelte for building this.<br>
-                Adding this to your portfolio will definitely give it a strong look<p>
-        </ul>
+        <div class="card">
+            <img src="C:\Users\saira\Desktop\HTML\Ai.jpg" class="logo" alt=".jpg">
+            <h3>Project 1</h3>
+            <p>We </p>
+        </div>
+        <div class="card">
+            <img src="C:\Users\saira\Desktop\html 2\2.jpeg" alt=".jpeg">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
     </section>
-    <section class="Bottom section">
-        <h2>Contact Us</h2>
-        <p>Email.Id :sairamgoud9985@gmail.com </p>
-        <p>Mobile: 7995273792</p>
+
+    <section class="bottom">
+        <div class="bottom-content">
+            <h2>Contact Me</h2><br>
+            <p>Email: sairamgoud9985@email.com</p>
+            <p>Phone: 7995273792</p>
+        </div>
     </section>
 </body>
 </html>
